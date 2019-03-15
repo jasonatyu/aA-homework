@@ -32,7 +32,9 @@ class Map
     end 
 
     def show 
-        @map 
+        @map.each do |arr|
+            p "#{arr[0]} => #{arr[1]}"
+        end  
     end 
 
 end
