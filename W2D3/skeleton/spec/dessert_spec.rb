@@ -22,7 +22,7 @@ describe Dessert do
       expect(dessert.ingredients).to eq([])
     end 
     it "raises an argument error when given a non-integer quantity" do 
-      expect { Dessert.new("carrot cake", "a", "Paul Hollywood") }.to raise_error(ArgumentError)
+      expect { Dessert.new("carrot cake", "a", chef) }.to raise_error(ArgumentError)
     end
   end
 
