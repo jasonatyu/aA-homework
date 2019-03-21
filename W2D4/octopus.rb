@@ -44,7 +44,7 @@ tiles_array = ["up", "right-up", "right", "right-down", "down", "left-down", "le
 def slow_dance(direction, tiles_array)
     tiles_array.each_with_index do |dir, i|
         if dir == direction 
-            return 1
+            return i
         end 
     end
 end
