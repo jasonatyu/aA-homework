@@ -29,11 +29,9 @@ function teaAndBiscuits() {
             console.log(`So you ${firstRes} want tea and you ${secondRes} want biscuits.`);
             reader.close();
         });
-        
+
     });
 }
-
-
 
 teaAndBiscuits();
 
