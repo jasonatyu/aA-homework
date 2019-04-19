@@ -45,7 +45,7 @@ class Calculator extends React.Component {
     setNum1(e) {
         // your code here
         e.preventDefault();
-        this.setState({num1: e.currentTarget.value});
+        this.setState({ num1: e.currentTarget.value });
     }
 
     setNum2(e) {
