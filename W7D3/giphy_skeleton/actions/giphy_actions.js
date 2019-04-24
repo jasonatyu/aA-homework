@@ -1,5 +1,6 @@
 import * as APIUtil from '../util/api_util';
 export const RECEIVE_SEARCH_GIPHYS = 'RECEIVE_SEARCH_GIPHYS';
+export const REQUEST_SEARCH_GIPHYS = 'REQUEST_SEARCH_GIPHYS';
 
 export const receiveSearchGiphys = (giphys) => {
     return {
@@ -8,6 +9,7 @@ export const receiveSearchGiphys = (giphys) => {
     };
 };
 
-export const fetchSearchGiphys = () => (dispatch) => {
-    return APIUtil.fetchSearchGiphys().then((giphys) => dispatch(receiveSearchGiphys(giphys.data)));
+export const fetchSearchGiphys = (query) => (dispatch) => {
+    return APIUtil.fetchSearchGiphys(query).then(
+        (giphys) => dispatch(receiveSearchGiphys(giphys)));
 };

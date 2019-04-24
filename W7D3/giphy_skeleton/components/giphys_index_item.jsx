@@ -7,5 +7,4 @@ function GiphysIndexItem({ giphy }) {
         </li>
     );
 }
-
 export default GiphysIndexItem;
