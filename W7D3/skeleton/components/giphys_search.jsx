@@ -5,13 +5,13 @@ import GiphysIndex from './giphys_index';
 class GiphysSearch extends React.Component {
     constructor() {
         super();
-        this.state = { searchTerm: 'golden retriever' };
+        this.state = { searchTerm: 'puppies' };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     componentDidMount() {
-        this.props.fetchSearchGiphys('golden+retriever');
+        this.props.fetchSearchGiphys('puppies');
     }
 
     handleChange(e) {

@@ -217,7 +217,7 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(GiphysSearch).call(this));
     _this.state = {
-      searchTerm: 'golden retriever'
+      searchTerm: 'puppies'
     };
     _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_assertThisInitialized(_this)));
@@ -227,7 +227,7 @@ function (_React$Component) {
   _createClass(GiphysSearch, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.props.fetchSearchGiphys('golden+retriever');
+      this.props.fetchSearchGiphys('puppies');
     }
   }, {
     key: "handleChange",
@@ -349,6 +349,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  var store = Object(_store_store__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  var root = document.getElementById('root');
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_root__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    store: store
+  }), root);
+});
 
 /***/ }),
 
